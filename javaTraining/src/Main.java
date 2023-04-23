@@ -1,19 +1,12 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import java.io.IOException;
+
+
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
-        int a = 10;
-        int b= 20;
+        Menu menu = new Menu();
 
-        Calculation cal = new Calculation();
-
-        cal.addTwoNumbers(a,b);
-        cal.subtractTwoNumbers(a,b);
-        cal.divideTwoNumbers(a,b);
-        cal.multiplyTwoNumbers(a,b);
-        cal.squareOfNumber(a);
-        cal.cubeOfNumber(a);
+        menu.show();
 
     }
 }
